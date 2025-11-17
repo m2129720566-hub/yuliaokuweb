@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>传统中医药文化 - 国家非物质文化遗产名录</title>
+    <style>
+        /* 基础样式重置与全局设置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", "SimSun", serif;
+        }
+        body {
+            background-color: #f5f2eb; /* 传统宣纸色调 */
+            color: #333;
+            line-height: 1.8;
+            padding: 20px 0;
+        }
+        /* 页面容器 */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        /* 标题区域样式 */
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #8c2c22; /* 传统暗红边框 */
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            color: #8c2c22;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .header p {
+            font-size: 1.1rem;
+            color: #666;
+            font-style: italic;
+        }
+        /* 项目卡片样式 */
+        .heritage-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-bottom: 40px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+        .heritage-card:hover {
+            transform: translateY(-5px); /* hover上浮效果 */
+        }
+        /* 项目标题样式 */
+        .card-title {
+            font-size: 1.8rem;
+            color: #8c2c22;
+            border-left: 4px solid #8c2c22;
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }
+        /* 项目基础信息样式（表格布局） */
+        .basic-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 20px;
+        }
+        .info-item {
+            display: flex;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #5a2e21;
+            min-width: 120px;
+        }
+        .info-content {
+            color: #444;
+        }
+        /* 简介区域样式 */
+        .card-intro {
+            margin-bottom: 30px;
+        }
+        .intro-title {
+            font-size: 1.3rem;
+            color: #5a2e21;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .intro-content {
+            text-indent: 2em; /* 首行缩进，符合中文阅读习惯 */
+            color: #444;
+            margin-bottom: 15px;
+        }
+        /* 传承人区域样式 */
+        .inheritor {
+            padding-top: 20px;
+            border-top: 1px dashed #ccc;
+        }
+        .inheritor-title {
+            font-size: 1.3rem;
+            color: #5a2e21;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .inheritor-list {
+            list-style: none;
+            color: #444;
+        }
+        .inheritor-item {
+            margin-bottom: 8px;
+        }
+        /* 响应式调整（适配移动端） */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            .card-title {
+                font-size: 1.5rem;
+            }
+            .basic-info {
+                grid-template-columns: 1fr;
+            }
+            .info-label {
+                min-width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 页面标题区域 -->
+        <div class="header">
+            <h1>传统中医药文化 - 国家非物质文化遗产代表性名录</h1>
+            <p>来源：中国非物质文化遗产网·中国非物质文化遗产数字博物馆 | 访问日期：2025年9月22日</p>
+        </div>
+
+        <!-- 项目1：中医正骨疗法（新泰孟氏正骨疗法） -->
+        <div class="heritage-card">
+            <h2 class="card-title">中医正骨疗法（新泰孟氏正骨疗法）</h2>
+            <div class="basic-info">
+                <div class="info-item">
+                    <span class="info-label">项目序号：</span>
+                    <span class="info-content">971</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">项目编号：</span>
+                    <span class="info-content">Ⅸ-11</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">公布时间：</span>
+                    <span class="info-content">2021年（第五批）</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类别：</span>
+                    <span class="info-content">传统医药</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">所属地区：</span>
+                    <span class="info-content">山东省</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类型：</span>
+                    <span class="info-content">扩展项目</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">申报单位：</span>
+                    <span class="info-content">山东省新泰市</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">保护单位：</span>
+                    <span class="info-content">新泰孟氏医院</span>
+                </div>
+            </div>
+            <div class="card-intro">
+                <h3 class="intro-title">项目简介</h3>
+                <p class="intro-content">新泰孟氏正骨疗法由孟氏家族第65代传人孟衍文始创于清朝嘉庆年间，距今有200余年历史，后经孟氏数代人苦心探索与实践，将原来单纯治疗断胫折臂的疗法发展成为一门综合的正骨医学。该疗法以新泰市西张庄镇高孟村为中心，辐射周边地区，在全国和海外均有影响。</p>
+                <p class="intro-content">新泰孟氏正骨疗法主治骨折、脱臼等运动系疾病，疗法特殊，自制柳木夹板、布带鱼鳔肢具及木制肢具，自制药物，选药地道严谨，强调动静结合，动静互补，效果良好。</p>
+                <p class="intro-content">孟氏正骨遵循三个原则，即整体辨证原则、筋骨并重原则、内外兼治原则：
+                    1. 整体辨证原则：人体是有机整体，骨伤治疗需分清主次先后、轻重缓急，以辨证观点诊治；
+                    2. 筋骨并重原则：筋与骨互为依存，治伤需兼顾二者，发挥骨的支持与筋的运动作用，加速创伤愈合；
+                    3. 内外兼治原则：治标需治本，实现内外协调用药。
+                </p>
+                <p class="intro-content">孟氏正骨手法包括诊断手法、复位手法和活筋手法：医者通过触、摸、探判断病情，结合力学原理实现骨折圆满复位。正骨固定方法多样，涵盖柳木小夹板固定法、弹性固定法、胶布固定法等8类。此外，方药以中医理论为基础，遵循“破、和、补”大法与君臣佐使配伍，结合临床经验持续改进。</p>
+                <p class="intro-content">该疗法无需手术，能减少病患痛苦与创伤，疗效快、费用低，是民众信任的骨伤治疗方法，具有现实应用价值；其传承谱系清晰，伴有大量民间传奇与医患佳话，具有历史文化价值，影响遍及全国及周边国家。</p>
+            </div>
+            <div class="inheritor">
+                <h3 class="inheritor-title">相关传承人</h3>
+                <ul class="inheritor-list">
+                    <li class="inheritor-item">暂无记载</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 项目2：传统中医药文化（宏济堂中医药文化） -->
+        <div class="heritage-card">
+            <h2 class="card-title">传统中医药文化（宏济堂中医药文化）</h2>
+            <div class="basic-info">
+                <div class="info-item">
+                    <span class="info-label">项目序号：</span>
+                    <span class="info-content">971</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">项目编号：</span>
+                    <span class="info-content">Ⅸ-11</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">公布时间：</span>
+                    <span class="info-content">2021年（第五批）</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类别：</span>
+                    <span class="info-content">传统医药</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">所属地区：</span>
+                    <span class="info-content">山东省</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类型：</span>
+                    <span class="info-content">扩展项目</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">申报单位：</span>
+                    <span class="info-content">山东省济南市</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">保护单位：</span>
+                    <span class="info-content">山东宏济堂制药集团股份有限公司</span>
+                </div>
+            </div>
+            <div class="card-intro">
+                <h3 class="intro-title">项目简介</h3>
+                <p class="intro-content">宏济堂中医药文化以百年宏济堂“宏业济民”精神为核心，以“宏德广布，济世养生”为文化导向，涵盖业训、堂训、用人、药材选购、中药生产等多方面，是完整的中医药文化体系。该文化主要分布于山东省济南市，百余年发展中知名度与影响力持续增强。</p>
+                <p class="intro-content">宏济堂创建于清光绪年间，据《宏济堂药目》记载，乐镜宇在原山东官药局基础上创办，取“宏业济民”之意。20世纪前期，随规模扩大，形成兼具中医药行业共性与宏济堂特色的文化；中华人民共和国成立后，融合济南当地中医药作坊的工艺、文化与历史，丰富内涵并形成“多元包容，重点一体”特色；改革开放后，将“宏济”释义拓展为“宏德广布，济世养生”。</p>
+                <p class="intro-content">宏济堂中医药文化是企业的基础与灵魂，核心内容包括：
+                    1. 选材：坚持“五不要”（非一等货、陈货、有杂质、非药用部分、非产地最佳），奉行“炮制虽繁必不敢省人工，品味虽贵必不敢减物力”；
+                    2. 用人：坚持“五不要”（不孝敬父母、不忠实朋友、对人无礼、不讲信誉、不讲仁义）与“五不登堂”（贪财、贪名、懒学、术庸、轻穷），彰显儒士风范；
+                    3. 经营：遵循“修合无人见，存心有天知”理念，践行医者仁心。
+                </p>
+                <p class="intro-content">该文化传承中注重以人为本，通过追溯体系保证药材道地性，建立行业标准把控药品质量，融合传统技艺与现代科技，对药材选购、生产、检测全流程严格管理，赋予传统中医药时代内涵，推动其高质量发展。目前已传承四代，传承群体包括各级非遗传承人、中青年传承人及广大民众，共同助力文化传播。</p>
+                <p class="intro-content">宏济堂中医药文化体现中国中医药文化的杰出创造力与旺盛生命力，是中医药数百年发展的历史缩影，对弘扬优秀传统中医药文化具有重要推动作用。</p>
+            </div>
+            <div class="inheritor">
+                <h3 class="inheritor-title">相关传承人</h3>
+                <ul class="inheritor-list">
+                    <li class="inheritor-item">暂无记载</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 项目3：传统中医药文化（鹤年堂中医药养生文化） -->
+        <div class="heritage-card">
+            <h2 class="card-title">传统中医药文化（鹤年堂中医药养生文化）</h2>
+            <div class="basic-info">
+                <div class="info-item">
+                    <span class="info-label">项目序号：</span>
+                    <span class="info-content">971</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">项目编号：</span>
+                    <span class="info-content">Ⅸ-11</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">公布时间：</span>
+                    <span class="info-content">2008年（第二批）</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类别：</span>
+                    <span class="info-content">传统医药</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">所属地区：</span>
+                    <span class="info-content">北京市</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类型：</span>
+                    <span class="info-content">新增项目</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">申报单位：</span>
+                    <span class="info-content">北京鹤年堂医药有限责任公司</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">保护单位：</span>
+                    <span class="info-content">北京鹤年堂医药有限责任公司</span>
+                </div>
+            </div>
+            <div class="card-intro">
+                <h3 class="intro-title">项目简介</h3>
+                <p class="intro-content">中医学是中国古代形成的人体生命与健康之学，并非简单的方药技艺积累，而是具有深厚传统文化背景的知识体系。其以独特哲学思维、系统基础理论、丰富科学内涵与鲜明人文色彩立足世界医学之林，既是传统文化的活化形态，也是其重要发展空间。恬淡从真的养生之道、冲和中庸的治疗法则、清心内守的性命理念、以人为本的医道准绳、诚信无欺的行业规范，贯穿中医药理论与实践，成为行业灵魂与敬业精神核心。</p>
+                <p class="intro-content">鹤年堂创建于明代嘉靖年间，先后由曹萨飒、王圣一、刘一峰等世医家族传承，是北京医药行业现存历史最悠久的老字号。作为中国传统医药的传承者与弘扬者，鹤年堂数百年坚持“生身以养寿为先，养身以却病为急”理念，形成以“调元气，养太和”为核心的中医药养生文化。</p>
+                <p class="intro-content">鹤年堂中医药养生文化内涵丰富，包括：
+                    1. 认知与观念：“和者鹤寿”的天年观、“阴阳之律，性命之本”的认知观、“终身养生不辍，整体平衡不偏”的整体观、“天道鹤年”与“人道鹤年”的生命观；
+                    2. 养生方法：“未病常调、将病预调、已病医调”的“以调求和”之法、“节、律、神、和”四字诀的“以神求和”之法，及形养术、神养术、药护术、食养术、按摩术；
+                    3. 技艺传承：饮片传统炮制技术誉满京城，《西鹤年堂参茸醪醴丸散膏丹价目表》记载694种药品，技艺独特且传承至今。
+                </p>
+                <p class="intro-content">该文化体现中华民族传统文化的杰出创造力与旺盛生命力，是中医药数百年发展的历史缩影；其数百年实践基础使其成为现代生活中实现健康长寿的有效手段，对提高全民健康水平、构建和谐社会具有重要现实意义。当前受西医西药冲击，保护与发展该文化是弘扬中医药文化的当务之急。</p>
+            </div>
+            <div class="inheritor">
+                <h3 class="inheritor-title">相关传承人</h3>
+                <ul class="inheritor-list">
+                    <li class="inheritor-item">雷雨霖（1926.09），传承时间：04-1948</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 项目4：传统中医药文化（九芝堂传统中药文化） -->
+        <div class="heritage-card">
+            <h2 class="card-title">传统中医药文化（九芝堂传统中药文化）</h2>
+            <div class="basic-info">
+                <div class="info-item">
+                    <span class="info-label">项目序号：</span>
+                    <span class="info-content">971</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">项目编号：</span>
+                    <span class="info-content">Ⅸ-11</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">公布时间：</span>
+                    <span class="info-content">2008年（第二批）</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类别：</span>
+                    <span class="info-content">传统医药</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">所属地区：</span>
+                    <span class="info-content">湖南省</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类型：</span>
+                    <span class="info-content">新增项目</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">申报单位：</span>
+                    <span class="info-content">湖南省九芝堂股份有限公司</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">保护单位：</span>
+                    <span class="info-content">九芝堂股份有限公司</span>
+                </div>
+            </div>
+            <div class="card-intro">
+                <h3 class="intro-title">项目简介</h3>
+                <p class="intro-content">中医学是中国古代形成的人体生命与健康之学，并非简单的方药技艺积累，而是具有深厚传统文化背景的知识体系。其以独特哲学思维、系统基础理论、丰富科学内涵与鲜明人文色彩立足世界医学之林，既是传统文化的活化形态，也是其重要发展空间。恬淡从真的养生之道、冲和中庸的治疗法则、清心内守的性命理念、以人为本的医道准绳、诚信无欺的行业规范，贯穿中医药理论与实践，成为行业灵魂与敬业精神核心。</p>
+                <p class="intro-content">清代顺治七年（1650年），劳澄在湖南长沙坡子街创建九芝堂。创建初期，劳澄仿效神农氏亲自试药，立下“吾药必吾先尝之”的规矩，为九芝堂中药文化奠定最初范型。</p>
+                <p class="intro-content">发展过程中，九芝堂发扬湖湘文化“敢为人先”与“经世致用”精神，传承“悬壶济世、利泽生民”的湖湘中医药文化精髓，结合湖南当地水土环境，形成“药者当付全力，医者当问良心”的人文精神。该祖训经世代相传，成为九芝堂人的行为准则与传统中医药文化的重要组成部分。</p>
+                <p class="intro-content">九芝堂不断完善与提高传统中药炮制技术和制剂技术（含独家方剂与特有炮制技术），代表湖湘传统中药制药技术的较高标准与水平。其“恤苦济贫，优益同业”“扶危救人”“重质量、讲诚信”“九分情、一分利”的经营理念，对医药行业发展具有重要促进作用。当前受西医西药冲击，弘扬九芝堂传统中药文化，对传承优秀中医药文化具有重要推动作用。</p>
+            </div>
+            <div class="inheritor">
+                <h3 class="inheritor-title">相关传承人</h3>
+                <ul class="inheritor-list">
+                    <li class="inheritor-item">暂无记载</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 项目5：中医正骨疗法（潘高寿传统中药文化）（注：文档原文归类，按原文呈现） -->
+        <div class="heritage-card">
+            <h2 class="card-title">中医正骨疗法（潘高寿传统中药文化）</h2>
+            <div class="basic-info">
+                <div class="info-item">
+                    <span class="info-label">项目序号：</span>
+                    <span class="info-content">971</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">项目编号：</span>
+                    <span class="info-content">Ⅸ-11</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">公布时间：</span>
+                    <span class="info-content">2014年（第四批）</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类别：</span>
+                    <span class="info-content">传统医药</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">所属地区：</span>
+                    <span class="info-content">山东省</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类型：</span>
+                    <span class="info-content">扩展项目</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">申报单位：</span>
+                    <span class="info-content">山东省新泰市</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">保护单位：</span>
+                    <span class="info-content">新泰孟氏医院</span>
+                </div>
+            </div>
+            <div class="card-intro">
+                <h3 class="intro-title">项目简介</h3>
+                <p class="intro-content">新泰孟氏正骨疗法由孟氏家族第65代传人孟衍文始创于清朝嘉庆年间，距今有200余年历史，后经孟氏数代人苦心探索与实践，将原来单纯治疗断胫折臂的疗法发展成为一门综合的正骨医学。该疗法以新泰市西张庄镇高孟村为中心，辐射周边地区，在全国和海外均有影响。</p>
+                <p class="intro-content">新泰孟氏正骨疗法主治骨折、脱臼等运动系疾病，疗法特殊，自制柳木夹板、布带鱼鳔肢具及木制肢具，自制药物，选药地道严谨，强调动静结合，动静互补，效果良好。</p>
+                <p class="intro-content">孟氏正骨遵循三个原则，即整体辨证原则、筋骨并重原则、内外兼治原则：
+                    1. 整体辨证原则：人体是有机整体，骨伤治疗需分清主次先后、轻重缓急，以辨证观点诊治；
+                    2. 筋骨并重原则：筋与骨互为依存，治伤需兼顾二者，发挥骨的支持与筋的运动作用，加速创伤愈合；
+                    3. 内外兼治原则：治标需治本，实现内外协调用药。
+                </p>
+                <p class="intro-content">孟氏正骨手法包括诊断手法、复位手法和活筋手法：医者通过触、摸、探判断病情，结合力学原理实现骨折圆满复位。正骨固定方法多样，涵盖柳木小夹板固定法、弹性固定法、胶布固定法等8类。此外，方药以中医理论为基础，遵循“破、和、补”大法与君臣佐使配伍，结合临床经验持续改进。</p>
+                <p class="intro-content">该疗法无需手术，能减少病患痛苦与创伤，疗效快、费用低，是民众信任的骨伤治疗方法，具有现实应用价值；其传承谱系清晰，伴有大量民间传奇与医患佳话，具有历史文化价值，影响遍及全国及周边国家。</p>
+            </div>
+            <div class="inheritor">
+                <h3 class="inheritor-title">相关传承人</h3>
+                <ul class="inheritor-list">
+                    <li class="inheritor-item">暂无记载</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 项目6：中医正骨疗法（陈李济传统中药文化）（注：文档原文归类，按原文呈现） -->
+        <div class="heritage-card">
+            <h2 class="card-title">中医正骨疗法（陈李济传统中药文化）</h2>
+            <div class="basic-info">
+                <div class="info-item">
+                    <span class="info-label">项目序号：</span>
+                    <span class="info-content">971</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">项目编号：</span>
+                    <span class="info-content">Ⅸ-11</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">公布时间：</span>
+                    <span class="info-content">2008年（第二批）</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类别：</span>
+                    <span class="info-content">传统医药</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">所属地区：</span>
+                    <span class="info-content">广东省</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类型：</span>
+                    <span class="info-content">新增项目</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">申报单位：</span>
+                    <span class="info-content">广东省广州陈李济制药厂</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">保护单位：</span>
+                    <span class="info-content">广州白云山陈李济药厂有限公司</span>
+                </div>
+            </div>
+            <div class="card-intro">
+                <h3 class="intro-title">项目简介</h3>
+                <p class="intro-content">中医学是中国古代形成的人体生命与健康之学，并非简单的方药技艺积累，而是具有深厚传统文化背景的知识体系。其以独特哲学思维、系统基础理论、丰富科学内涵与鲜明人文色彩立足世界医学之林，既是传统文化的活化形态，也是其重要发展空间。恬淡从真的养生之道、冲和中庸的治疗法则、清心内守的性命理念、以人为本的医道准绳、诚信无欺的行业规范，贯穿中医药理论与实践，成为行业灵魂与敬业精神核心。</p>
+                <p class="intro-content">作为“中华老字号”，陈李济是中国最早建立的制药企业之一，有“北有同仁堂、东有胡庆余堂、南有陈李济”之称，是清末全国三大中药品牌之一。</p>
+                <p class="intro-content">陈李济中药文化的核心是“诚信为本，同心济世”：由陈姓商人和李姓医生共同出资创立，各取姓氏为商号，象征永久合作、同心济世。企业遵循“工艺虽繁必不减其工，品味虽多必不减其物”宗旨，制药求精工，选料必上乘；数百年来立下规矩，凡路过门市者若晕倒或受伤，必施药相救。</p>
+                <p class="intro-content">陈李济创新将蜂蜡与木蜡混合，制成软硬适中的蜡壳包裹药丸，推动医药制剂领域革新；同时创立独特的陈皮储藏方法。当前受西医西药冲击及年代久远影响，陈李济中药文化的传承面临挑战。</p>
+            </div>
+            <div class="inheritor">
+                <h3 class="inheritor-title">相关传承人</h3>
+                <ul class="inheritor-list">
+                    <li class="inheritor-item">暂无记载</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 项目7：中医正骨疗法（同济堂传统中药文化）（注：文档原文归类，按原文呈现） -->
+        <div class="heritage-card">
+            <h2 class="card-title">中医正骨疗法（同济堂传统中药文化）</h2>
+            <div class="basic-info">
+                <div class="info-item">
+                    <span class="info-label">项目序号：</span>
+                    <span class="info-content">971</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">项目编号：</span>
+                    <span class="info-content">Ⅸ-11</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">公布时间：</span>
+                    <span class="info-content">2008年（第二批）</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类别：</span>
+                    <span class="info-content">传统医药</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">所属地区：</span>
+                    <span class="info-content">贵州省</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类型：</span>
+                    <span class="info-content">新增项目</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">申报单位：</span>
+                    <span class="info-content">贵州省同济堂制药有限公司</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">保护单位：</span>
+                    <span class="info-content">国药集团同济堂（贵州）制药有限公司</span>
+                </div>
+            </div>
+            <div class="card-intro">
+                <h3 class="intro-title">项目简介</h3>
+                <p class="intro-content">中医学是中国古代形成的人体生命与健康之学，并非简单的方药技艺积累，而是具有深厚传统文化背景的知识体系。其以独特哲学思维、系统基础理论、丰富科学内涵与鲜明人文色彩立足世界医学之林，既是传统文化的活化形态，也是其重要发展空间。恬淡从真的养生之道、冲和中庸的治疗法则、清心内守的性命理念、以人为本的医道准绳、诚信无欺的行业规范，贯穿中医药理论与实践，成为行业灵魂与敬业精神核心。</p>
+                <p class="intro-content">同济堂始建于清代光绪十四年（1888年），百余年发展中形成严格的质量管理制度、经营理念与方法，及独特的质量文化和诚信文化。在边远少数民族聚居地区，同济堂既坚持弘扬传统医药文化，又吸收当地少数民族医药精华，形成自身特殊风格。</p>
+                <p class="intro-content">同济堂传统医药文化的核心包括：
+                    1. 价值观：“同心协力、济世为民”；
+                    2. 质量观：“购药须出地道，制作必须精细，配售必依法度”；
+                    3. 经营理念：“货真价实”“童叟无欺”；
+                    4. 职业道德：“济世活人，急人之急，质量取胜，济世取信”；
+                    5. 技艺特色：传统中药炮制技术，及传统中医药与民族民间医药的融合。
+                </p>
+                <p class="intro-content">当前受西方现代文化影响，传统医药面临困境，同济堂传统医药文化亦需社会支持与保护。</p>
+            </div>
+            <div class="inheritor">
+                <h3 class="inheritor-title">相关传承人</h3>
+                <ul class="inheritor-list">
+                    <li class="inheritor-item">暂无记载</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 项目8：中医正骨疗法（桐君传统中药文化）（注：文档原文归类，按原文呈现） -->
+        <div class="heritage-card">
+            <h2 class="card-title">中医正骨疗法（桐君传统中药文化）</h2>
+            <div class="basic-info">
+                <div class="info-item">
+                    <span class="info-label">项目序号：</span>
+                    <span class="info-content">971</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">项目编号：</span>
+                    <span class="info-content">Ⅸ-11</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">公布时间：</span>
+                    <span class="info-content">2021年（第五批）</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类别：</span>
+                    <span class="info-content">传统医药</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">所属地区：</span>
+                    <span class="info-content">浙江省</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类型：</span>
+                    <span class="info-content">扩展项目</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">申报单位：</span>
+                    <span class="info-content">浙江省杭州市桐庐县</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">保护单位：</span>
+                    <span class="info-content">桐君堂药业有限公司</span>
+                </div>
+            </div>
+            <div class="card-intro">
+                <h3 class="intro-title">项目简介</h3>
+                <p class="intro-content">桐君传统中药文化是中国中医药文化的重要组成部分，内涵丰富：以中药采集与炮制技艺为核心，涵盖桐君历史传说、《桐君采药录》文献、桐君山文化遗址、药祖桐君祭祀活动等，是融合医药技艺、民间信俗、历史遗迹的综合性传统医药文化。</p>
+                <p class="intro-content">相传上古时期，桐君受黄帝之命采百草、识药味、定三品、立君臣佐使、著《桐君采药录》，被尊为“药祖”，其居处称“桐君山”。历代医籍均有桐君记载，桐君山上至今保留纪念桐君的祠塔、碑亭、摩崖石刻及历代名人题词，当地有多处以“桐君”命名的地名，民间流传诸多桐君传说。为祭祀桐君举办的桐君中药文化节，已吸引众多国内外人士参与，文化传承不息。</p>
+                <p class="intro-content">该文化核心区为浙江省杭州市桐庐县（钱塘江中游），动植物野生资源丰富：植物共157科、1149种，植被型组完备，盛产山茱萸、杭白芍等地产药材，因道地性强、品质优获“中药资源库”之称，当地中药采集、种植、炮制历史悠久。传承中秉承桐君“结庐采药，修制惠民”精神，中药材采购讲究道地，炮制依循古法，尤其通过堆放管控、温湿度差异调节及曲菌活性变化的中药发酵工艺，特色鲜明。</p>
+                <p class="intro-content">桐君传统中药文化以桐庐县为中心，以钱塘江流域为辐射源，从江南扩散至华南、西南等地，逐步遍及全国；以“桐君堂”命名的医药机构遍布各地，随传统中医药文化影响力提升，其自身影响也不断扩大。</p>
+                <p class="intro-content">桐君“结庐采药，修制惠民”精神与当今社会公德理念、社会主义核心价值观高度契合；其古迹、传说及精神对中医药史、地方文化史研究具有重要意义，古法炮制技艺对当今中医药传承发展亦有重要科学研究价值。</p>
+            </div>
+            <div class="inheritor">
+                <h3 class="inheritor-title">相关传承人</h3>
+                <ul class="inheritor-list">
+                    <li class="inheritor-item">申屠银洪（出生日期暂无，编号暂无）</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 项目9：中医正骨疗法（朱丹溪中医药文化）（注：文档原文归类，按原文呈现） -->
+        <div class="heritage-card">
+            <h2 class="card-title">中医正骨疗法（朱丹溪中医药文化）</h2>
+            <div class="basic-info">
+                <div class="info-item">
+                    <span class="info-label">项目序号：</span>
+                    <span class="info-content">971</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">项目编号：</span>
+                    <span class="info-content">Ⅸ-11</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">公布时间：</span>
+                    <span class="info-content">2021年（第五批）</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类别：</span>
+                    <span class="info-content">传统医药</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">所属地区：</span>
+                    <span class="info-content">浙江省</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类型：</span>
+                    <span class="info-content">扩展项目</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">申报单位：</span>
+                    <span class="info-content">浙江省金华市义乌市</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">保护单位：</span>
+                    <span class="info-content">义乌市中医医院（义乌市中医医院医共体、义乌市朱丹溪中医院）</span>
+                </div>
+            </div>
+            <div class="card-intro">
+                <h3 class="intro-title">项目简介</h3>
+                <p class="intro-content">朱丹溪中医药文化以元代著名医家朱震亨的文化精神和医学成就为基础，经长期传承实践形成，内涵丰富、特色突出。朱震亨生于1281年，世居义乌赤岸镇，因居所旁有小溪得名“丹溪”。</p>
+                <p class="intro-content">朱震亨秉持“致知创新”精神，倡导“阳有余阴不足论”“相火论”，创立“滋阴学说”和气血痰郁“四伤学说”，著有《格致余论》《局方发挥》《本草衍义补遗》等，对中医理论与临床具有重要指导意义；其创制的大补阴丸、越鞠丸、左金丸等名方，至今仍广泛应用于临床。</p>
+                <p class="intro-content">朱丹溪弟子众多，第二代弟子赵良仁、戴思恭，再传弟子王宾、刘纯等均享盛名，形成中医学术史上重要的“丹溪学派”，在我国医学史上地位重要，对新安医学、吴门医派等流派产生重大影响。</p>
+                <p class="intro-content">朱丹溪中医药文化经“丹溪学派”传承600余年，传人不断，以义乌为中心辐射全国、远播海外，对国内外传统医学影响深远：其理论、临床经验与方剂被编入《中医基础理论》《中医诊断学》等教材及国家中医药管理局《古代经典名方目录》，成为中医药从业者的基本理念与规范；运用丹溪中药炮制技艺生产的外用疔疮膏、中药穴位敷贴等产品，在浙江、江西、北京等地畅销并获患者好评。</p>
+                <p class="intro-content">浙江义乌、江西龙虎山等地建有供奉朱丹溪的庙殿，举办祭祀民俗活动，形成独特民间信仰；义乌有多处以“丹溪”命名的地名，保存丹溪墓、丹溪庙、丹溪殿，并在此基础上建立丹溪文化园。1989年起，义乌市多次举办朱丹溪祭祀大典、国际丹溪中医药论坛、丹溪学说研讨会、丹溪养生文化节，当代传承人群体也开展大量发掘、整理、保护工作。</p>
+                <p class="intro-content">该文化是传统中医药文化的有机组成部分，涵盖学术思想、临床经验、历史文物遗迹、民间习俗信仰等层面，历史悠久、文化底蕴深厚，具有较高文化、科研、医疗价值，在“健康中国”建设中发挥积极作用。</p>
+            </div>
+            <div class="inheritor">
+                <h3 class="inheritor-title">相关传承人</h3>
+                <ul class="inheritor-list">
+                    <li class="inheritor-item">暂无记载</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 项目10：中医正骨疗法（龙山药王医药文化）（注：文档原文归类，按原文呈现） -->
+        <div class="heritage-card">
+            <h2 class="card-title">中医正骨疗法（龙山药王医药文化）</h2>
+            <div class="basic-info">
+                <div class="info-item">
+                    <span class="info-label">项目序号：</span>
+                    <span class="info-content">971</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">项目编号：</span>
+                    <span class="info-content">Ⅸ-11</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">公布时间：</span>
+                    <span class="info-content">2021年（第五批）</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类别：</span>
+                    <span class="info-content">传统医药</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">所属地区：</span>
+                    <span class="info-content">湖南省</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">类型：</span>
+                    <span class="info-content">扩展项目</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">申报单位：</span>
+                    <span class="info-content">湖南省邵阳市新邵县</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">保护单位：</span>
+                    <span class="info-content">新邵县文化馆</span>
+                </div>
+            </div>
+            <div class="card-intro">
+                <h3 class="intro-title">项目简介</h3>
+                <p class="intro-content">龙山药王医药文化以尊奉药王孙思邈为核心，是流传于新邵县龙山地区及周边娄底、湘潭等地的地域性传统医药文化，逐步传播至省外乃至海外。</p>
+                <p class="intro-content">新邵龙山中药资源丰富，共2384种，为药王医药文化孕育提供基础。据史料记载与传说，唐代京兆郡孙思邈寻访葛洪踪迹，居龙山采药、行医、修炼、著述；其融合道、儒、佛、医思想，德技双馨，被尊为“药王”，其医药学、养生学及医事活动与民俗、梅山文化融合，形成龙山药王医药文化，深度融入民众生产生活与医疗保健，形成“十民九医（药）”的风俗，孕育百余位医药名家、养生家。</p>
+                <p class="intro-content">龙山药王医药文化内容包括：
+                    1. 医药经验：孙思邈医药特色，及药王文化孕育的医家群体、民间医药经验；
+                    2. 卫生民俗：相关卫生习俗；
+                    3. 道德文化：孙思邈“大医精诚”医德，及历代传承人补充的人生观、道德观、价值观；
+                    4. 文化载体：讴歌孙思邈医德医技的医事佳话、神话故事；
+                    5. 历史遗迹：孙思邈及相关传承人活动的遗迹、文物。
+                </p>
+                <p class="intro-content">该文化当代传承实践集中于四方面：
+                    1. 文化传播：说唱药王故事、祭祀孙思邈，传颂其医德医风医术，引导向善崇医；
+                    2. 养生实践：将孙思邈倡导的择居、养性、按摩、导引、药膳食疗、药浴、禁忌等融入生活，实现自我保健与疾病防治；
+                    3. 技艺传承：通过师承传授药王医药术；
+                    4. 药材管理：按孙思邈对中草药的认知与要求，开展种植、采收、加工、炮制、储藏工作。
+                </p>
+                <p class="intro-content">龙山药王医药文化孕育的医家经验丰富了传统医药内容，至今仍应用于临床与养生保健，具有较高文化价值；孙思邈“大医精诚”理念体现以人为本、仁以爱人、诚信不欺的价值观，传承弘扬该文化对当今社会道德建设具有促进作用。</p>
+            </div>
+            <div class="inheritor">
+                <h3 class="inheritor-title">相关传承人</h3>
+                <ul class="inheritor-list">
+                    <li class="inheritor-item">暂无记载</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
